@@ -1,0 +1,71 @@
+In traditional programming we need data + rules to gain an answer. 
+But in modern programming like deep learning we need data + answer to gain some rules.
+
+Course 1 Introduction 
+Quiz 1
+1. What is the difference between traditional programming and Machine Learning? 
+In traditional programming, a programmer has to formulate or code rules manually, 
+whereas, in Machine Learning, the algorithm automatically formulates the rules from the data.
+
+2. What do we call the process of telling the computer what the data represents 
+(i.e. this data is for walking, this data is for running)? Labelling the Data
+
+3. What is a Dense layer? A layer of connected neurons
+
+4. How do you measure how good the current ‘guess’ is? Using the Loss function
+
+5. What does the optimizer do? Generates a new and improved guess
+
+6. What is Convergence? The process of getting very close to the correct answer
+7. What is overfitting? An analysis that corresponds too closely or exactly to a particular set of data.
+8. What does model.fit do? It trains the neural network to fit one set of values to another
+
+Quiz 2
+1. What is the resolution of o the 70,000 images from the Fashion MNIST dataset? 28x28 Greyscale
+2. Why are there 10 output neurons in the Neural Network used as an example for the Computer Vision 
+Problem? There are 10 different labels
+
+3. What does Relu do? It only returns x if x is greater than zero
+4. Why do you split data into training and test sets? To test a network with previously unseen data
+
+5. The on_epoch_end function sends a logs object with lots of great information about the current 
+state of training at the start of every epoch. False
+
+6. Why do you set the callbacks= parameter in your fit function? 
+So, on every epoch you can call back to a code function
+
+Quiz 3
+1. How do Convolutions improve image recognition? They isolate features in images
+2. What does the Pooling technique do to the images? Reduces information in them 
+while maintaining some features
+
+3. If you pass a 28x28 image through a 3x3 filter the output will be 26x26 True
+4. After max pooling a 26x26 image with a 2x2 filter, the output will be 56x56 False
+
+5. How does using Convolutions in our Deep neural network impact training? Its 
+impact will depend on other factors.
+
+Quiz 4
+1. What method on the Image Generator is used to normalize the image? rescale
+2. How did we specify the training size for the images? The target_size parameter 
+on the training generator
+
+3. When we specify the input_shape to be (300, 300, 3), what does that mean? 
+Every Image will be 300x300 pixels, with 3 bytes to define color
+
+4. Convolutional Neural Networks are better for classifying images like horses 
+and humans because:
+•	In these images, the features may be in different parts of the frame
+•	There’s a wide variety of horses
+•	There’s a wide variety of humans
+
+5. If your training data is close to 1.000 accuracy, but your validation data isn’t, 
+what’s the risk here? You’re overfitting on your training data
+
+6. After reducing the size of the images, the training results were different. Why? 
+We removed some convolutions to handle the smaller images
+
+7. Using Image Generator, how do you label images? It’s based on the directory the 
+image is contained in
+
+
